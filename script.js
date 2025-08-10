@@ -7,6 +7,7 @@ function Book(title, author , year, type) {
     this.year = year;
     this.type = type;
 }
+
 function addBookToLibrary(title, author , year, type) {
     let book = new Book(title, author , year, type);
     myLibrary.push(book);
@@ -14,7 +15,7 @@ function addBookToLibrary(title, author , year, type) {
 
 addBookToLibrary("title", "author" , "year", "type")
 addBookToLibrary("title", "author" , "year", "type")
-console.log(myLibrary)
+
 const section = document.querySelector("section")
 
 function showBook(book){

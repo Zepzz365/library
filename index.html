@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <button id="new">New Book</button>
-    <form action="" id="myform" class="hidden">
-            <label for="author">Author: </label>
-            <input type="text" id="author" >    
-        
-        
-            <label for="title">Title: </label>
-            <input type="text" id="title" >    
-        
-            <label for="type">Type: </label>
-            <input type="text" id="type" >    
-        
-            <label for="year">Year: </label>
-            <input type="text" id="year" >    
-        <div class="buttons">
-            <button  id="add">Add</button>
-            <button id="restart">restart</button>
-            <button id="exit">Exit</button>
-        </div>
-        
-    </form>
+  <button id="new">New Book</button>
+  <form action="" id="myform" class="hidden">
+    <label for="author">Author: </label>
+    <input type="text" id="author" />
 
-    <section>
+    <label for="title">Title: </label>
+    <input type="text" id="title" />
 
-    </section>
-    
-    <script src="script.js"></script>
+    <label for="type">Type: </label>
+    <input type="text" id="type" />
+
+    <label for="year">Year: </label>
+    <input type="text" id="year" />
+    <div class="buttons">
+      <button id="add">Add</button>
+      <button id="restart">restart</button>
+      <button id="exit">Exit</button>
+    </div>
+  </form>
+  <template id="myTemplate">
+    <div class="book-card">
+      <img src="book.png" />
+      <div class="book-info">
+        <button id="del">del</button>
+        <div>title</div>
+        <div>author</div>
+        <div>type</div>
+        <div>year</div>
+      </div>
+    </div>
+  </template>
+  <section></section>
+
+  <script src="script.js"></script>
 </body>
-</html>
